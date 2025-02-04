@@ -18,7 +18,7 @@ resource "azurerm_resource_group" "mate" {
 
 resource "azurerm_storage_account" "mate" {
   name                     = "examplestorageacc"
-  resource_group_name      = azurerm_resource_group.mate.terra
+  resource_group_name      = azurerm_resource_group.mate
   location                 = azurerm_resource_group.mate.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
